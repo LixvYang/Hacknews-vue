@@ -6,20 +6,19 @@
 
 <script>
 import Item from './Item.vue'
-
 export default {
-  name: "home",
+  name: 'home',
   components: {
     'item': Item
   },
   data: function () {
     return {
-      err: "",
+      err: '',
       stories: this.$store.state.topStories
-    };
+    }
   },
   created: function () {
     if (this.$store.state.topStories.length === 0) this.$store.dispatch('fetch_top_stories')
   }
-};
+}
 </script>
