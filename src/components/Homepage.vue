@@ -6,6 +6,7 @@
 
 <script>
 import Item from './Item.vue'
+
 export default {
   name: 'home',
   components: {
